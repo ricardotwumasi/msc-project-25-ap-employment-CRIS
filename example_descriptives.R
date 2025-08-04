@@ -8,7 +8,7 @@ for (pkg in required_packages) {
   library(pkg, character.only = TRUE)
 }
 
-# VISUALIZATION 1: VIOLIN PLOT 
+# VISUALISATION 1: VIOLIN PLOT 
 # Age distribution by antipsychotic type and gender
 
 
@@ -79,9 +79,9 @@ bar_plot <- ggplot(employment_summary,
 
 print(bar_plot)
 
-# =============================================================================
+
 # QUICK DATA SUMMARY 
-# =============================================================================
+
 
 cat("\n=== DATA SUMMARY ===\n")
 cat("Total patients:", nrow(antipsychotic_data), "\n")
@@ -105,5 +105,5 @@ print(summary_table)
 # ggsave("violin_plot.png", violin_plot, width = 10, height = 6, dpi = 300)
 # ggsave("employment_plot.png", bar_plot, width = 10, height = 6, dpi = 300)
 
-cat("\n Analysis complete! Two lovely visualizations created.\n")
+cat("\n Analysis complete! Two lovely visualisations created.\n")
 cat(" Try changing colors, themes, or adding facet_wrap() for more insights!\n")
